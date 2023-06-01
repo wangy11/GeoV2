@@ -1,0 +1,62 @@
+{
+  "blue_point": {
+    "x": 76,
+    "y": 1,
+    "width": 22,
+    "height": 22
+  },
+  "green_point": {
+    "x": 76,
+    "y": 25,
+    "width": 22,
+    "height": 22
+  },
+  "grey_point": {
+    "x": 76,
+    "y": 49,
+    "width": 22,
+    "height": 22
+  },
+  "orange_point": {
+    "x": 100,
+    "y": 1,
+    "width": 22,
+    "height": 22
+  },
+  "point": {
+    "x": 1,
+    "y": 1,
+    "width": 40,
+    "height": 40
+  },
+  "popup_blue": {
+    "x": 1,
+    "y": 43,
+    "width": 31,
+    "height": 43
+  },
+  "popup_yellow": {
+    "x": 43,
+    "y": 1,
+    "width": 31,
+    "height": 43
+  },
+  "rain": {
+    "x": 43,
+    "y": 46,
+    "width": 26,
+    "height": 26
+  },
+  "red_point": {
+    "x": 100,
+    "y": 25,
+    "width": 22,
+    "height": 22
+  },
+  "yellow_point": {
+    "x": 100,
+    "y": 49,
+    "width": 22,
+    "height": 22
+  }
+}

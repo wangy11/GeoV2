@@ -1,0 +1,82 @@
+{
+  "blue_point": {
+    "x": 152,
+    "y": 2,
+    "width": 44,
+    "height": 44,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "green_point": {
+    "x": 152,
+    "y": 50,
+    "width": 44,
+    "height": 44,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "grey_point": {
+    "x": 152,
+    "y": 98,
+    "width": 44,
+    "height": 44,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "orange_point": {
+    "x": 200,
+    "y": 2,
+    "width": 44,
+    "height": 44,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "point": {
+    "x": 2,
+    "y": 2,
+    "width": 80,
+    "height": 80,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "popup_blue": {
+    "x": 2,
+    "y": 86,
+    "width": 62,
+    "height": 86,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "popup_yellow": {
+    "x": 86,
+    "y": 2,
+    "width": 62,
+    "height": 86,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "rain": {
+    "x": 86,
+    "y": 92,
+    "width": 52,
+    "height": 52,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "red_point": {
+    "x": 200,
+    "y": 50,
+    "width": 44,
+    "height": 44,
+  "pixelRatio": 2,
+  "visible": true
+  },
+  "yellow_point": {
+    "x": 200,
+    "y": 98,
+    "width": 44,
+    "height": 44,
+  "pixelRatio": 2,
+  "visible": true
+  }
+}
