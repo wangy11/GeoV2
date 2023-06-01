@@ -8,28 +8,27 @@
 import mapCom from "../../components/map1/index.vue"; // 地图
 // import {getData} from '@/api'
 
-
 export default {
   name: "mainMiddle",
   components: {
     mapCom, // 地图
   },
-  data(){
-    return{
-      chinaTotal:{}
-    }
+  data() {
+    return {
+      chinaTotal: {},
+    };
   },
-  mounted(){
-    this.getDatas()
+  mounted() {
+    this.getDatas();
   },
-  methods:{
-     getDatas(){
+  methods: {
+    getDatas() {
       // getData().then(res=>{
       //   console.log(res.data.data.diseaseh5Shelf);
       //   this.chinaTotal = res.data.data.diseaseh5Shelf.chinaTotal
       // })
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -43,7 +42,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   .middle-data {
-    margin: 20 * @height 15 * @width  0;
+    margin: 20 * @height 15 * @width 0;
   }
   .plan-tab {
     width: 100%;

@@ -200,12 +200,12 @@ export default {
       });
       this.map.on("mouseleave", "province", () => {
         this.highLight([]);
-        this.popup.remove()
+        this.popup.remove();
       });
 
       this.map.on("mouseleave", "newCity", (e) => {
         this.highLight([]);
-        this.popup.remove()
+        this.popup.remove();
       });
       this.map.on("mousemove", "newCity", (e) => {
         this.querySourceFeatures(e);
@@ -213,18 +213,17 @@ export default {
 
       this.map.on("mousemove", "city", (e) => {
         this.querySourceFeatures(e);
-        
       });
       this.map.on("mouseleave", "city", (e) => {
         this.highLight([]);
-        this.popup.remove()
+        this.popup.remove();
       });
       this.map.on("mousemove", "county", (e) => {
         this.querySourceFeatures(e);
       });
       this.map.on("mouseleave", "county", (e) => {
         this.highLight([]);
-        this.popup.remove()
+        this.popup.remove();
       });
 
       //监听尺寸变化 改变地图缩放等级
@@ -245,24 +244,26 @@ export default {
           this.map.getSource("city")._data.features.forEach((item) => {
             let colorStr = this.randomColor();
             item.properties.color = "#" + colorStr;
-            item.properties.level = 'city'
-            this.map.getSource('city_center')._data.features.forEach((val) => {
-              if(item.properties.name == val.properties.name){
-                item.properties.center = val.geometry.coordinates
+            item.properties.level = "city";
+            this.map.getSource("city_center")._data.features.forEach((val) => {
+              if (item.properties.name == val.properties.name) {
+                item.properties.center = val.geometry.coordinates;
               }
-            })
+            });
           });
           this.map.getSource("city").setData(this.map.getSource("city")._data);
           //添加初始随机色
           this.map.getSource("county")._data.features.forEach((item) => {
             let colorStr = this.randomColor();
             item.properties.color = "#" + colorStr;
-            item.properties.level = 'county'
-            this.map.getSource('county_center')._data.features.forEach((val) => {
-              if(item.properties.name == val.properties.name){
-                item.properties.center = val.geometry.coordinates
-              }
-            })
+            item.properties.level = "county";
+            this.map
+              .getSource("county_center")
+              ._data.features.forEach((val) => {
+                if (item.properties.name == val.properties.name) {
+                  item.properties.center = val.geometry.coordinates;
+                }
+              });
           });
           this.map
             .getSource("county")
@@ -375,12 +376,16 @@ export default {
         ._data.features.filter(
           (item) => item.properties.adcode == e.features[0].properties.adcode
         );
-        const lngLat = e.features[0].properties.center.slice(1, -1).split(",");
-        this.popup.setLngLat(lngLat).setOffset([0,-30]).setHTML(
-            `<span>adcode: </span><span style="color:#2744ff">${e.features[0].properties.adcode}</span><br/>
+      const lngLat = e.features[0].properties.center.slice(1, -1).split(",");
+      this.popup
+        .setLngLat(lngLat)
+        .setOffset([0, -30])
+        .setHTML(
+          `<span>adcode: </span><span style="color:#2744ff">${e.features[0].properties.adcode}</span><br/>
             <span>name: </span><span style="color:#2744ff">${e.features[0].properties.name}</span><br/>
             <span>level: </span><span style="color:#2744ff">${e.features[0].properties.level}</span>`
-          ).addTo(this.map);
+        )
+        .addTo(this.map);
       this.highLight(features[0]);
     },
 

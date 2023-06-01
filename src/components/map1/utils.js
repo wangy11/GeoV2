@@ -1,6 +1,5 @@
-
-export function addCountyLayer(map, array,len) {
-var county = {
+export function addCountyLayer(map, array, len) {
+  var county = {
     id: "county-test",
     type: "custom",
     onAdd: function (map, gl) {
@@ -32,11 +31,7 @@ var county = {
       this.buffer = gl.createBuffer();
 
       gl.bindBuffer(gl.ARRAY_BUFFER, this.buffer);
-      gl.bufferData(
-        gl.ARRAY_BUFFER,
-        new Float32Array(array),
-        gl.STATIC_DRAW
-      );
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(array), gl.STATIC_DRAW);
     },
     onRemove: function () {
       array = [];

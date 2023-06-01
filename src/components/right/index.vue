@@ -135,10 +135,10 @@ export default {
     //更改颜色
     handleClick(row) {
       // console.log(row);
-      if(!row.color){
-        row.color = "rgba(255, 255, 255, 0)"
+      if (!row.color) {
+        row.color = "rgba(255, 255, 255, 0)";
       }
-      this.$bus.$emit("changeSource", row?.province,row?.city,row?.town,row);
+      this.$bus.$emit("changeSource", row?.province, row?.city, row?.town, row);
     },
 
     //更改数值
@@ -186,9 +186,9 @@ export default {
   height: 100vh;
   background: #fff;
   .list-table:hover,
-    .server-table i.el-tooltip:hover {
-        cursor: pointer; //鼠标变手
-    }
+  .server-table i.el-tooltip:hover {
+    cursor: pointer; //鼠标变手
+  }
   .list-tab {
     margin-top: 20px;
   }

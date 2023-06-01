@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import {getData1 }  from '@/api/index'
 export default {
   name: "App",
 };

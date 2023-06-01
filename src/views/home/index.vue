@@ -41,8 +41,8 @@ export default {
       width: 70vw;
       // width: 880 * @width;
 
-  background: url(../../assets/img/znj/bg.png) no-repeat;
-  background-size: 100% 100%;
+      background: url(../../assets/img/znj/bg.png) no-repeat;
+      background-size: 100% 100%;
     }
     .main-right {
       width: 30vw;
