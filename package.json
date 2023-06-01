@@ -9,18 +9,14 @@
   },
   "dependencies": {
     "@turf/turf": "^6.5.0",
-    "ant-design-vue": "^3.2.15",
     "axios": "^0.27.2",
     "core-js": "^3.6.5",
-    "dayjs": "^1.11.5",
-    "echarts": "^5.2.2",
     "element-ui": "^2.15.9",
     "less": "^3.13.1",
     "less-loader": "^4.1.0",
     "mapbox-gl": "^2.9.2",
     "vue": "^2.6.11",
     "vue-count-to": "^1.0.13",
-    "vue-echarts": "^6.0.0",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
