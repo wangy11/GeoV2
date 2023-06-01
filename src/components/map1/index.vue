@@ -21,7 +21,7 @@ import * as turf from "@turf/turf";
 import mapboxgl from "mapbox-gl";
 import * as earcut from "./earcut";
 import { addCountyLayer } from "./utils";
-import { getCity } from "@/api/city";
+import { getCity } from "@/services/index";
 export default {
   name: "Map",
   data() {
