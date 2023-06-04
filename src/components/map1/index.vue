@@ -400,8 +400,9 @@ export default {
     async addCity(layerid, geometry, fname, adcode) {
       // console.log(adcode);
       const res = await getCity(adcode);
-      this.map.getSource("newCity").setData(res.data.data);
-      this.map.getSource("newCity_bounds").setData(res.data.data);
+      console.log(res)
+      this.map.getSource("newCity").setData(res);
+      this.map.getSource("newCity_bounds").setData(res);
       this.map.setLayoutProperty("newCity", "visibility", "visible");
       this.map.setLayoutProperty("newCity_bounds", "visibility", "visible");
       this.map.setLayoutProperty("province", "visibility", "none");
@@ -415,7 +416,7 @@ export default {
         features: [],
       };
       // console.log(res.data.data.features);
-      res.data.data.features.map((item) => {
+      res.features.map((item) => {
         obj.features.push({
           type: "Feature",
           properties: {
